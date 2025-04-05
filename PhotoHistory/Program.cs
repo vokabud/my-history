@@ -31,4 +31,6 @@ foreach (var metadata in result)
     Console.WriteLine($"Latitude: {metadata.Latitude}, Longitude: {metadata.Longitude}, DateTaken: {metadata.DateTaken}");
 }
 
+CsvWriter.WriteToCsv(@"G:\output.csv", metadatas);
+
 Console.WriteLine("End.");
